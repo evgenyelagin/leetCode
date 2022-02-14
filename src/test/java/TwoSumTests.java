@@ -72,5 +72,13 @@ public class TwoSumTests {
         int[] actual = solution.twoSum(testData, target);
         int[] expected = {6, 7};
         Assert.assertEquals(actual, expected);
+    }  @Test
+    public void TestTwoPair() {
+        Solution solution = new Solution();
+        int[] testData = {1, 2, 1, 2, 1, 2, 0, 0};
+        int target = 3;
+        int[] actual = solution.twoSum(testData, target);
+        int[] expected = {0, 1};
+        Assert.assertEquals(actual, expected);
     }
 }
